@@ -22,7 +22,7 @@
       // The current speed of the ball
       var dx = 1;
       var dy = 5;
-      var dx2 = 1;
+      var dx2 = -1;
       var dy2 = 5;
       /**
        * This function takes a 2d canvas context and draws a ball on it at ballX and ballY
@@ -54,8 +54,8 @@
         context.arc(ballX, ballY, BALL_RADIUS, 0, 2 * Math.PI, true);
         context.closePath();
         context.fill();
-        }
-          
+        
+         context.beginPath(); 
         context.fillStyle = BALL_COLOR2;
         context.arc(ballX2, ballY2, BALL_RADIUS2, 0, 2 * Math.PI, true);
         context.closePath();
