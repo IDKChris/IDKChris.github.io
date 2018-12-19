@@ -17,6 +17,8 @@
       // The x and y position of the ball. Start in the center
       var ballX = CANVAS_WIDTH / 2;
       var ballY = CANVAS_HEIGHT / 2;
+      var ballX2 = CANVAS_WIDTH / 2;
+      var ballY2 = CANVAS_HEIGHT / 2;
       // The current speed of the ball
       var dx = 1;
       var dy = 5;
@@ -51,6 +53,7 @@
         context.arc(ballX, ballY, BALL_RADIUS, 0, 2 * Math.PI, true);
         context.closePath();
         context.fill();
+        }
           
         context.fillStyle = BALL_COLOR2;
         context.arc(ballX2, ballY2, BALL_RADIUS2, 0, 2 * Math.PI, true);
